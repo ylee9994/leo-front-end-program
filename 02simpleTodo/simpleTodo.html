@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My todo app for javascript practice</title>
+</head>
+<body>
+    <div class="container shadow mx-auto mt-5 p-5 w-70">
+      <h2>My To-Do App</h2>
+      <hr>
+      <div class="input-group">
+        <input id="item" class="form-control" type="text" placeholder="Input new todo">
+        <button id="newBtn" type="button" class="btn btn-info" onclick="addItem()">New Entry</button>
+        
+      </div>
+      <hr>
+      <ul id="todolist" class="list-group"></ul>
+    </div>
+    <script src="simpleTodojs.js"></script>
+  </body>
+  <footer style="bottom:0; left: 0; position: relative;">
+    <!-- Footer links -->
+      <nav>
+        <a href="some-url" target="_blank">Footer link</a> <!-- opens in new tab -->
+        <a href="some-url">Footer link</a>
+        <a href="some-url">Footer link</a>
+      </nav>
+    <!-- Copyright footnote -->
+      &copy; 2020 Some copyright message.
+    <!-- Contact link -->
+      <address>
+        Contact <a href="mailto:me@mailservice.com">me</a>
+      </address>
+    </footer>
+</html>

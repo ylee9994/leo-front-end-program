@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<style>
+ .js{
+  font-weight:bold; color:red;
+}
+#first{ color:green}
+span{color:blue}
+</style>
+<body >
+<h1>Javascript<h1>
+<input type="button" value="night" onclick="
+document.querySelector('body').style.backgroundColor='black';
+document.querySelector('body').style.color='white';
+">
+
+<input type="button" value="day" onclick="
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';
+">
+
+<input type="button" value="black" onclick="
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';
+">
+<h2 style="background-color:coral;color:powderblue">javascript ></h2>
+<p>
+djkjk
+Span과 Div
+
+우리가 <span> CSS </span> 를 이용해서 <span id="first" class="js"> 문단의 특정 부분에만 </span> 스타일을 주어서 강조를 하고 싶다고 해 봅시다. 이 때 이 부분을 감싸줄 수 있는 HTML 태그가 필요하겠죠.
+
+이를 위해서 우리는 div와 span이라는 태그를 사용합니다. <br> 둘 모두 어떠한 특정한 기능이 있는 태그가 아니고, CSS나 Javascript 코드를 삽입하기 위해서 존재하는 태그입니다. div 태그는 화면 전체를 사용하기 때문에 줄바꿈이 되고, span은 줄바꿈이 되지 않습니다.
+
+이제 이러한 div와 span 태그 안에 style 속성을 부여하면 <span class="js"> 문단의 특정 부분에만 </span> 이 태그로 감싸진 부분에만 디자인이 적용되게 됩니다.
+
+하지만 이렇게 모든 부분을 div나 span  <span> CSS </span>태그로 감싸려고 한다면 이를 쓰기도 힘들고, 수정하기는 더욱 힘들 것입니다. 이를 위해서 CSS에는 선택자라는 기능이 존재합니다.
+
+
+</p>
+</body>
+</html>

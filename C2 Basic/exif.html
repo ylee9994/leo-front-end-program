@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>\
+<h1> Objects </h1>
+<script>
+	var coworkers = {
+		"programmer":"Egg",
+		"desinger":"Me"
+	};
+	coworkers.bookkeeper = "duu"
+</script>
+<h1> Traverse </h1>
+<script>
+	coworkers.showall = function(){
+
+		for(var key in this){
+			document.write(key + '<br>' + ' ' + this[key] + '<br>');
+		}
+	}
+	coworkers.showall();
+</script>
+<h1> Functions </h1>
+<h2> Basic </h2>
+<ul>
+	<script>
+		function two(){
+			document.write('<li>2-1</li>');
+			document.write('<li>2-2</li>');
+		}
+	</script>
+</ul>
+<h2>Parameter & Argument </h2>
+	<script>
+		two();
+		two();
+	</script>
+<h2> Return </h2>
+<h1> Loop  & Array </h1>
+<script>
+	var coworkers = ["egoing", "leezche", "duru", "taehi", "apple"];
+</script>
+<h2> coworkers </h2>
+<ul>
+<script>
+	var i = 0;
+	while(i<coworkers.length){
+		document.write('<li>'+i+' ' + coworkers[i]+ '</li>');
+		i = i+1;
+}
+</script>
+</ul>
+<h1> Loop </h1>
+<ul>
+<script>
+	var i = 0;
+	while(i<3){
+		document.write('<li>2</li>');
+		document.write('<li>3</li>');
+		i = i+ 1;
+	}
+</script>
+</ul>
+
+<input id="night_day" type="button" value="blackk"  onclick="
+ if(document.querySelector('#night_day').value == 'blackk'){
+	document.querySelector('body').style.backgroundColor='black';
+	document.querySelector('body').style.color='white';
+	document.querySelector('#night_day').value='day';
+ }else{
+	document.querySelector('body').style.backgroundColor='white';
+	document.querySelector('body').style.color='black';
+	document.querySelector('#night_day').value='blackk';
+}
+">
+
+<input type="button" value="blackkk"  onclick="
+   	var target = document.querySelector('body');
+	if(this.value ==='blackkk'){
+		target.style.backgroundColor='black';
+		target.style.color='white';
+		this.value='day';
+ 	}else{
+		target.style.backgroundColor='white';
+		target.style.color='black';
+		this.value='blackkk';
+}
+
+">
+<h1> Conditional Statement </h1>
+<script>
+  document.write("1<br>");
+document.write("2<br>");
+document.write("3<br>");
+document.write("3<br>");
+</script>
+<h1> Comparison operator </h1>
+<h2>===</h2>
+<script>
+ document.write(1==1)
+</script>
+
+<h3> 1 &lt 2 </h3>
+<script>
+ document.write(1<2);
+</script>
+</body>
+</html>
